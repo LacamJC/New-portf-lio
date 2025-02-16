@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Mono:wght@200;300&family=Roboto+Slab:wght@400;700&display=swap');
+
+$roboto_mono : 'Roboto Mono', cursive; /*TITULO*/
+$roboto_slab : 'Roboto Slab', cursive; /*PARAGRAFOS*/
+
+$tam_fonte_titulo : 3rem;
+$tam_fonte_subtitulo : 2.5rem;
+$tam_fonte_paragrafo : 1.1rem;
+
+$sombra_lite: 0px 0px 5px rgba(0, 0, 0, 0.249);
+$sombra_leve : 0px 0px 5px rgba(0, 0, 0, 0.349);
+$sombra_texto_leve: 0px 5px 10px rgba(0, 0, 0, 0.116);;
+$sombra_texto : 0px 5px 10px rgba(0, 0, 0, 0.322);
+$preto : #212529;
+
+
+
+@keyframes from_left {
+    from{
+        transform: translateX(-200px) scale(.2);
+    }
+    
+    to{
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes from_right{
+    from{
+        transform: translateX(200px) scale(.2);
+    }
+    
+    to{
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes to_right_smooth{
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes from_top{
+    from{
+        transform: translateY(-50px) scale(.6);
+
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes from_bottom{
+    from{
+        transform: translateY(50px) scale(.6);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes desaparecer{
+    from{
+        opacity: 1  ;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+
+@keyframes carrosel {
+    from{
+        transform: translateX(-110%);
+        
+    }
+
+    to{
+        transform: translateX(110%);
+    }
+
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    75%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}

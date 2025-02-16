@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Mono:wght@200;300&family=Roboto+Slab:wght@400;700&display=swap");
+/*TITULO*/
+/*PARAGRAFOS*/
+@keyframes from_left {
+  from {
+    transform: translateX(-200px) scale(0.2);
+  }
+  to {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes from_right {
+  from {
+    transform: translateX(200px) scale(0.2);
+  }
+  to {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes to_right_smooth {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes from_top {
+  from {
+    transform: translateY(-50px) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes from_bottom {
+  from {
+    transform: translateY(50px) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes desaparecer {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes carrosel {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav_social {
+  padding: 10px 20px;
+  position: absolute;
+  animation: from_left 0.5s ease;
+}
+.nav_social .link {
+  text-decoration: none;
+}
+.nav_social .link .icon {
+  font-size: 5rem;
+  margin-right: 50px;
+  color: #212529;
+}
+
+.assinatura {
+  font-family: "Roboto Mono", cursive;
+  margin: 10px;
+  font-size: 1.3rem;
+  color: #212529;
+  animation: to_right_smooth 1.5s ease-in-out;
+}
+.assinatura .icon {
+  font-size: 2.5rem;
+}
+
+.content {
+  overflow: hidden;
+}
+.content .techList {
+  animation: carrosel 30s linear infinite;
+  position: relative;
+  height: 100px;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon {
+  font-size: 5rem;
+}
+
+.background {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+.background .mobileTitle, .background .mobileList {
+  display: none;
+}
+.background .t_1, .background .t_2 {
+  font-size: 10rem;
+  font-family: "Roboto Mono", cursive;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.322);
+  color: #212529;
+}
+.background .t_1 {
+  display: block;
+  font-size: 15rem;
+  animation: from_top 0.8s ease-in-out;
+}
+.background .t_2 {
+  display: flex;
+  align-items: flex-end;
+  font-size: 9rem;
+  animation: from_bottom 1s ease-in-out;
+}
+.background .t_2 .habilidades_lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 370px;
+  align-content: flex-start;
+  height: 100px;
+}
+.background .t_2 .habilidades_lista .habilidades_lista__item {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+  margin: 10px 15px;
+}
+@media screen and (max-width: 1220px) {
+  .background .t_1 {
+    font-size: 4em;
+  }
+  .background .t_2 {
+    font-size: 2em;
+    margin-left: 8px;
+  }
+  .background .t_2 .habilidades_lista {
+    width: 300px;
+    margin-bottom: 0px;
+    align-content: flex-end;
+  }
+  .background .t_2 .habilidades_lista .habilidades_lista__item {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .background {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 400px;
+  }
+  .background .t_1, .background .t_2 {
+    display: none;
+  }
+  .background .mobileTitle {
+    display: block;
+    font-size: 4em;
+    text-align: center;
+    font-family: "Roboto Mono", cursive;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.322);
+    animation: from_left 0.5s ease;
+  }
+  .background .mobileList {
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 2px;
+  }
+  .background .mobileList li {
+    font-family: "Roboto Mono", cursive;
+    margin: 10px 5px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.249);
+    animation: from_bottom 0.5s ease;
+  }
+}/*# sourceMappingURL=Hero.module.css.map */

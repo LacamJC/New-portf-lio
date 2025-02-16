@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Mono:wght@200;300&family=Roboto+Slab:wght@400;700&display=swap");
+/*TITULO*/
+/*PARAGRAFOS*/
+@keyframes from_left {
+  from {
+    transform: translateX(-200px) scale(0.2);
+  }
+  to {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes from_right {
+  from {
+    transform: translateX(200px) scale(0.2);
+  }
+  to {
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes to_right_smooth {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes from_top {
+  from {
+    transform: translateY(-50px) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes from_bottom {
+  from {
+    transform: translateY(50px) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes desaparecer {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes carrosel {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.whitespace {
+  height: 200px;
+  width: 100%;
+  background-color: #212529;
+}/*# sourceMappingURL=WhiteSpace.module.css.map */
