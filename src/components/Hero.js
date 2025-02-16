@@ -62,28 +62,7 @@ const Hero = () => {
 
                 
             </main>
-            {/* <h2 className={`${styles.assinatura}`}><FaLinkedin className={`${styles.icon}`}/><FaGithubSquare className={`${styles.icon}`}/> | João Ramajo</h2> */}
-
-            {/* <div className={`${styles.controller}`}>
-                <div className={`${styles.content}`}>
-                    <h2 className={`${styles.techList}`}>
-                        <FaJava className={`${styles.icon}`} />
-                        <IoLogoJavascript  className={`${styles.icon}`} />
-                        <FaHtml5  className={`${styles.icon}`} />
-                        <FaCss3Alt    className={`${styles.icon}`} />
-                        <FaPhp  className={`${styles.icon}`} />
-                        <FaSass  className={`${styles.icon}`} />
-                        <FaGitAlt className={`${styles.icon}`} />
-                        <SiMysql  className={`${styles.icon}`} />
-                        <FaBootstrap  className={`${styles.icon}`} />
-                        <FaNodeJs  className={`${styles.icon}`} />
-                        <SiExpress  className={`${styles.icon}`} />
-                        <FaLinux   className={`${styles.icon}`} />
-                        <FaFigma className={`${styles.icon}`} />
-                    </h2>
-                </div>
-            </div> */}
-            
+          
 
             <Carousel
                  swipeable={true}

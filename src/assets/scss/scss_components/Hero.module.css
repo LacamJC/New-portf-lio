@@ -96,33 +96,9 @@
   color: #212529;
 }
 
-.assinatura {
-  font-family: "Roboto Mono", cursive;
-  margin: 10px;
-  font-size: 1.3rem;
-  color: #212529;
-  animation: to_right_smooth 1.5s ease-in-out;
-}
-.assinatura .icon {
-  font-size: 2.5rem;
-}
-
-.content {
-  overflow: hidden;
-}
-.content .techList {
-  animation: carrosel 30s linear infinite;
-  position: relative;
-  height: 100px;
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .icon {
   font-size: 5rem;
+  animation: to_right_smooth 1s ease;
 }
 
 .background {
@@ -202,7 +178,7 @@
     text-align: center;
     font-family: "Roboto Mono", cursive;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.322);
-    animation: from_left 0.5s ease;
+    animation: from_left 1s ease;
   }
   .background .mobileList {
     display: block;
@@ -210,12 +186,14 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 2px;
+    justify-content: center;
+    gap: 5px;
   }
   .background .mobileList li {
     font-family: "Roboto Mono", cursive;
-    margin: 10px 5px;
+    margin: 10px 15px;
+    text-align: center;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.249);
-    animation: from_bottom 0.5s ease;
+    animation: from_bottom 1s ease;
   }
 }/*# sourceMappingURL=Hero.module.css.map */
